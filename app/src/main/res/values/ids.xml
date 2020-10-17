@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="appNameTextView" type="id" />
+    <item name="saveddonate" type="id" />
+    <item name="donation" type="id" />
+    <item name="saveddonors" type="id" />
+</resources>
