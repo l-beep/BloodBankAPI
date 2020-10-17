@@ -93,14 +93,14 @@
                 android:id="@+id/btn_donate"
                 android:background="@drawable/donate"
                 android:padding="10dp"
-                android:onClick="register_doner"
+                android:onClick="donate blood"
                 tools:ignore="OnClick" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Register Doner"
+                android:text="donate blood"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:textColor="@color/colorWhite"/>

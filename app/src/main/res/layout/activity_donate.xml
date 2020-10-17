@@ -52,7 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Register"
+                android:text="Donate Blood"
                 android:id="@+id/textView2"
                 android:layout_centerHorizontal="true"
                 android:textAlignment="center"
@@ -169,13 +169,13 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Register"
+                android:text="DONATE"
                 android:background="@color/colorRed"
                 android:textColor="@color/colorWhite"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:id="@+id/register"
-                android:onClick="register"/>
+                android:id="@+id/donate"
+                android:onClick="DONATE"/>
 
         </LinearLayout>
     </ScrollView>
