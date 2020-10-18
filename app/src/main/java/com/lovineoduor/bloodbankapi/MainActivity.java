@@ -10,17 +10,15 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.lovineoduor.myrestaurants.R;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-;
+
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     @BindView(R.id.donation)
-    Button mFindRestaurantsButton;
+    Button mdonatebloodButton;
     @BindView(R.id.locationEditText)
     EditText mLocationEditText;
     @BindView(R.id.appNameTextView)
@@ -34,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         Typeface caviarFont = Typeface.createFromAsset(getAssets(), "fonts/CaviarDreams.ttf");
         mAppNameTextView.setTypeface(caviarFont);
-        mFindRestaurantsButton.setOnClickListener(new View.OnClickListener(){
+        mdonatebloodButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(MainActivity.this, BloodBankActivity.class);
