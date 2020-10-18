@@ -67,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:hint="Full Name"
+                android:hint="year"
                 android:ems="10"
                 android:id="@+id/editText_name"
                 android:layout_marginTop="5dp"
@@ -80,7 +80,7 @@
                 android:ems="10"
                 android:id="@+id/editText_email"
                 android:layout_gravity="center_horizontal"
-                android:hint="E-mail"
+                android:hint="blood_bank_center"
                 android:layout_marginTop="5dp" />
 
             <EditText
@@ -89,7 +89,7 @@
                 android:inputType="phone"
                 android:ems="10"
                 android:id="@+id/editText_phone"
-                android:hint="Phone"
+                android:hint="unit_type"
                 android:layout_marginTop="5dp" />
 
             <EditText
@@ -98,73 +98,20 @@
                 android:inputType="textMultiLine"
                 android:ems="10"
                 android:id="@+id/editText_address"
-                android:hint="Address"
+                android:hint="units_count"
                 android:layout_marginTop="5dp" />
 
-            <LinearLayout
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/editText_address"
+                android:hint="entry_id"
+                android:layout_marginTop="5dp"
+                tools:ignore="DuplicateIds" />
 
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Blood Group :"
-                    android:layout_gravity="center_vertical" />
 
-                <Spinner
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/spinner_bloodgrp"
-                    android:layout_gravity="center_vertical"
-                    android:spinnerMode="dialog" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
-
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="City :"
-                    android:layout_gravity="center_vertical" />
-
-                <Spinner
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/spinner_city"
-                    android:spinnerMode="dialog"
-                    android:layout_gravity="center_vertical" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
-
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Area :"
-                    android:layout_gravity="center_vertical" />
-
-                <Spinner
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/spinner_area"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:spinnerMode="dialog" />
-
-            </LinearLayout>
 
             <Button
                 android:layout_width="wrap_content"

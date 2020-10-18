@@ -4,4 +4,5 @@
     <item name="saveddonate" type="id" />
     <item name="donation" type="id" />
     <item name="saveddonors" type="id" />
+    <item name="locationEditText" type="id" />
 </resources>
