@@ -5,4 +5,8 @@
     <item name="donation" type="id" />
     <item name="saveddonors" type="id" />
     <item name="locationEditText" type="id" />
+    <item name="donationTextView" type="id" />
+    <item name="listView" type="id" />
+    <item name="requestView" type="id" />
+    <item name="progressBar" type="id" />
 </resources>
