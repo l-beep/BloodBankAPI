@@ -9,4 +9,7 @@
     <item name="listView" type="id" />
     <item name="requestView" type="id" />
     <item name="progressBar" type="id" />
+    <item name="donationblood" type="id" />
+    <item name="requestblood" type="id" />
+    <item name="request" type="id" />
 </resources>

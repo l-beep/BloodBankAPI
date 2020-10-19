@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="@android:dimen/app_icon_size"
-    tools:context="com.lovineoduor.bloodbankapi.MainActivity"
+    tools:context="com.lovineoduor.bloodbankapi.ui.MainActivity"
     android:background="@color/colorWhite">
 
     <LinearLayout

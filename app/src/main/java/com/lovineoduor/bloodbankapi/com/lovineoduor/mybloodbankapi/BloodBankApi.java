@@ -4,7 +4,7 @@ package com.lovineoduor.bloodbankapi.com.lovineoduor.mybloodbankapi;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
+import retrofit2.Call;
 //import org.apache.commons.lang.builder.ToStringBuilder;
 
 public class BloodBankApi {
@@ -68,4 +68,11 @@ public class BloodBankApi {
         return new ToStringBuilder(this).append("help", help).append("success", success).append("result", result).toString();
     }
 
+    public Call<BloodBank> getdonate(String donate, String bloodbank) {
+        return null;
+    }
+
+    public Call<BloodBank> getrequest(String request, String bloodbank) {
+        return null;
+    }
 }
