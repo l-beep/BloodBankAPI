@@ -3,7 +3,9 @@ package com.lovineoduor.bloodbankapi.com.lovineoduor.mybloodbankapi;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.List;
+//import org.apache.commons.lang.builder.ToStringBuilder;
 
 public class BloodBankApi {
 
@@ -12,10 +14,10 @@ public class BloodBankApi {
     private String help;
     @SerializedName("success")
     @Expose
-    private Boolean success;
+    private String success;
     @SerializedName("result")
     @Expose
-    private Result result;
+    private String result;
 
     /**
      * No args constructor for use in serialization
@@ -30,7 +32,7 @@ public class BloodBankApi {
      * @param help
      * @param success
      */
-    public BloodBankApi(String help, Boolean success, Result result) {
+    public BloodBankApi(String help, String success, String result) {
         super();
         this.help = help;
         this.success = success;
@@ -45,19 +47,19 @@ public class BloodBankApi {
         this.help = help;
     }
 
-    public Boolean getSuccess() {
+    public String getSuccess() {
         return success;
     }
 
-    public void setSuccess(Boolean success) {
+    public void setSuccess(String success) {
         this.success = success;
     }
 
-    public Result getResult() {
+    public String getResult() {
         return result;
     }
 
-    public void setResult(Result result) {
+    public void setResult(String result) {
         this.result = result;
     }
 

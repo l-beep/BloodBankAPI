@@ -3,7 +3,7 @@ package com.lovineoduor.bloodbankapi.com.lovineoduor.mybloodbankapi;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import org.apache.commons.lang.builder.ToStringBuilder;
+//import org.apache.commons.lang.builder.ToStringBuilder;
 
 public class Record {
 
@@ -89,7 +89,7 @@ public class Record {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("year", year).append("bloodBankCenter", bloodBankCenter).append("unitType", unitType).append("unitsCount", unitsCount).append("entryId", entryId).toString();
+        return new ToStringBuilder().append("year", year).append("bloodBankCenter", bloodBankCenter).append("unitType", unitType).append("unitsCount", unitsCount).append("entryId", entryId).toString();
     }
 
 }

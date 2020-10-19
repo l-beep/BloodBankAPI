@@ -4,7 +4,7 @@ package com.lovineoduor.bloodbankapi.com.lovineoduor.mybloodbankapi;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import org.apache.commons.lang.builder.ToStringBuilder;
+//import org.apache.commons.lang.builder.ToStringBuilder;
 
 public class Result {
 
@@ -13,7 +13,7 @@ public class Result {
     private List<Field> fields = null;
     @SerializedName("resource_id")
     @Expose
-    private List<String> resourceId = null;
+    private List<Field> resourceId = null;
     @SerializedName("limit")
     @Expose
     private Integer limit;
@@ -22,7 +22,7 @@ public class Result {
     private Integer total;
     @SerializedName("records")
     @Expose
-    private List<Record> records = null;
+    private List<Field> records = null;
 
     /**
      * No args constructor for use in serialization
@@ -32,14 +32,14 @@ public class Result {
     }
 
     /**
-     * 
+     *
      * @param resourceId
      * @param total
      * @param records
      * @param limit
      * @param fields
      */
-    public Result(List<Field> fields, List<String> resourceId, Integer limit, Integer total, List<Record> records) {
+    public Result(List<Field> fields, List<Field> resourceId, Integer limit, Integer total, List<Field> records) {
         super();
         this.fields = fields;
         this.resourceId = resourceId;
@@ -56,11 +56,11 @@ public class Result {
         this.fields = fields;
     }
 
-    public List<String> getResourceId() {
+    public List<Field> getResourceId() {
         return resourceId;
     }
 
-    public void setResourceId(List<String> resourceId) {
+    public void setResourceId(List<Field> resourceId) {
         this.resourceId = resourceId;
     }
 
@@ -80,11 +80,11 @@ public class Result {
         this.total = total;
     }
 
-    public List<Record> getRecords() {
+    public List<Field> getRecords() {
         return records;
     }
 
-    public void setRecords(List<Record> records) {
+    public void setRecords(List<Field> records) {
         this.records = records;
     }
 

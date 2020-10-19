@@ -69,6 +69,7 @@
                 android:inputType="textPersonName"
                 android:hint="year"
                 android:ems="10"
+                android:textSize="25sp"
                 android:id="@+id/editText_name"
                 android:layout_marginTop="5dp"
                 android:capitalize="words" />
@@ -81,6 +82,7 @@
                 android:id="@+id/editText_email"
                 android:layout_gravity="center_horizontal"
                 android:hint="blood_bank_center"
+                android:textSize="25sp"
                 android:layout_marginTop="5dp" />
 
             <EditText
@@ -88,6 +90,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="phone"
                 android:ems="10"
+                android:textSize="25sp"
                 android:id="@+id/editText_phone"
                 android:hint="unit_type"
                 android:layout_marginTop="5dp" />
@@ -97,6 +100,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textMultiLine"
                 android:ems="10"
+                android:textSize="25sp"
                 android:id="@+id/editText_address"
                 android:hint="units_count"
                 android:layout_marginTop="5dp" />
@@ -106,23 +110,25 @@
                 android:layout_height="wrap_content"
                 android:inputType="textMultiLine"
                 android:ems="10"
+                android:textSize="25sp"
                 android:id="@+id/editText_address"
                 android:hint="entry_id"
                 android:layout_marginTop="5dp"
                 tools:ignore="DuplicateIds" />
 
 
-
             <Button
+                android:id="@+id/donate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DONATE"
-                android:background="@color/colorRed"
-                android:textColor="@color/colorWhite"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:id="@+id/donate"
-                android:onClick="DONATE"/>
+                android:layout_marginTop="20dp"
+                android:background="@color/colorRed"
+
+                android:onClick="DONATE"
+                android:text="DONATE"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
 
         </LinearLayout>
     </ScrollView>
