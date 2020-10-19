@@ -89,7 +89,7 @@ public class Record {
 
     @Override
     public String toString() {
-        return new ToStringBuilder().append("year", year).append("bloodBankCenter", bloodBankCenter).append("unitType", unitType).append("unitsCount", unitsCount).append("entryId", entryId).toString();
+        return new ToStringBuilder(this).append("year", year).append("bloodBankCenter", bloodBankCenter).append("unitType", unitType).append("unitsCount", unitsCount).append("entryId", entryId).toString();
     }
 
 }
