@@ -12,4 +12,7 @@
     <item name="donationblood" type="id" />
     <item name="requestblood" type="id" />
     <item name="request" type="id" />
+    <item name="errorTextView" type="id" />
+    <item name="spinner_bloodgrp" type="id" />
+    <item name="spinner_city" type="id" />
 </resources>
