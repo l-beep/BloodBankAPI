@@ -3,142 +3,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@android:dimen/app_icon_size"
-    android:paddingLeft="@android:dimen/app_icon_size"
-    android:paddingRight="@android:dimen/app_icon_size"
-    android:paddingTop="@android:dimen/app_icon_size">
+    android:background="@color/colorWhite">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:id="@+id/linearLayout"
-        android:layout_centerHorizontal="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="BLOOD"
-            android:id="@+id/textView"
-            android:textColor="@color/colorRed"
-            android:textSize="35sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="BANK"
-            android:id="@+id/textView3"
-            android:layout_marginLeft="3dp"
-            android:textColor="@color/colorGray"
-            android:textSize="35sp"/>
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
+    <RelativeLayout
         android:layout_height="match_parent"
-        android:layout_below="@+id/linearLayout"
-        android:layout_marginTop="10dp"
-        android:id="@+id/scrollView">
+        android:layout_width="match_parent"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linearLayout"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BLOOD"
+                android:id="@+id/textView"
+                android:textColor="@color/colorRed"
+                android:textSize="35sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BANK"
+                android:id="@+id/textView3"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/colorGray"
+                android:textSize="35sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Emergency Blood Required"
+            android:id="@+id/textView4"
+            android:textSize="30sp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout3">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Blood Requisition Form"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Blood Group :"
                 android:textSize="25sp"
-                android:id="@+id/textView2"
-                android:layout_centerHorizontal="true"
-                android:textAlignment="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="15dp"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:gravity="center_horizontal">
-            </TextView>
+                android:layout_gravity="center_vertical" />
 
-            <EditText
+            <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:hint=" year"
-                android:ems="10"
-                android:textSize="25sp"
-                android:id="@+id/editText_name"
-                android:layout_marginTop="5dp"
-                android:capitalize="words" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:ems="10"
-                android:textSize="25sp"
-                android:id="@+id/editText_email"
-                android:layout_gravity="center_horizontal"
-                android:hint="blood_bank_center"
-                android:layout_marginTop="5dp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="phone"
-                android:ems="10"
-                android:textSize="25sp"
-
-                android:id="@+id/editText_phone"
-                android:hint="unit_type"
-                android:layout_marginTop="5dp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textMultiLine"
-                android:ems="10"
-                android:textSize="25sp"
-                android:id="@+id/editText_address"
-                android:hint="units_count"
-                android:layout_marginTop="5dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"
-                    android:ems="10"
-                    android:textSize="25sp"
-                    android:layout_gravity="center_horizontal"
-                    android:hint="entry_id"
-                    android:layout_marginTop="5dp" />
-
-            </LinearLayout>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="REQUEST BLOOD"
-                android:background="@color/colorRed"
-                android:textColor="@color/colorWhite"
-                android:layout_marginTop="20dp"
-                android:textSize="35sp"
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/donate"
-                android:onClick="REQUEST BLOOD"
-                tools:ignore="OnClick" />
+                android:id="@+id/spinner_bloodgrp"
+                android:spinnerMode="dialog"
+                android:layout_gravity="center_vertical" />
 
         </LinearLayout>
-    </ScrollView>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="City :"
+                android:textSize="25sp"
+                android:layout_gravity="center_vertical" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_city"
+                android:spinnerMode="dialog"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Request"
+            android:textSize="35sp"
+            android:id="@+id/submit"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorRed"
+            android:textColor="@color/colorWhite"
+            android:layout_alignRight="@+id/linearLayout"
+            android:layout_alignEnd="@+id/linearLayout"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout"
+            android:onClick="submit"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

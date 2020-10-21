@@ -2,10 +2,13 @@ package ui;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +20,7 @@ public abstract class DonateActivity extends AppCompatActivity implements Adapte
     ArrayAdapter<CharSequence> Blood_List;
     ArrayAdapter<CharSequence> City_List;
     ArrayAdapter<CharSequence> Area_List;
+    private Object DonerData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +31,7 @@ public abstract class DonateActivity extends AppCompatActivity implements Adapte
 
         Blood_List = ArrayAdapter.createFromResource(this,R.array.bg_arrays, android.R.layout.select_dialog_item);
         City_List = ArrayAdapter.createFromResource(this,R.array.city_arrays, android.R.layout.select_dialog_item);
-        Area_List = ArrayAdapter.createFromResource(this, R.array.agra_arrays, android.R.layout.select_dialog_item);
+        Area_List = ArrayAdapter.createFromResource(this, R.array.Nairobi_arrays, android.R.layout.select_dialog_item);
 
         Spinner spinner_blood = (Spinner)findViewById(R.id.spinner_bloodgrp);
         Spinner spinner_city = (Spinner)findViewById(R.id.spinner_city);
@@ -56,57 +60,57 @@ public abstract class DonateActivity extends AppCompatActivity implements Adapte
 
         int aid = 0;
 
-        if(city.equals("Agra"))
+        if(city.equals("Nairobi"))
         {
-            aid = R.array.agra_arrays;
+            aid = R.array.Nairobi_arrays;
         }
-        else if(city.equals("Vadodara"))
+        else if(city.equals("Mombasa"))
         {
-            aid = R.array.Vadodara_arrays;
+            aid = R.array.Mombasa_arrays;
         }
-        else if(city.equals("Bhopal"))
+        else if(city.equals("Kisumu"))
         {
-            aid = R.array.bpl_arrays;
+            aid = R.array.Kisumu_arrays;
         }
-        else if(city.equals("Chennai"))
+        else if(city.equals("Nakuru"))
         {
-            aid = R.array.chennai_arrays;
+            aid = R.array.Nakuru_arrays;
         }
-        else if(city.equals("Delhi"))
+        else if(city.equals("Nanyuki"))
         {
-            aid = R.array.delhi_arrays;
+            aid = R.array.Nanyuki_arrays;
         }
-        else if(city.equals("Dewas"))
+        else if(city.equals("Kericho"))
         {
-            aid = R.array.Dewas_arrays;
+            aid = R.array.Kericho_arrays;
         }
-        else if(city.equals("Faridabad"))
+        else if(city.equals("Turkana"))
         {
-            aid = R.array.faridabad_arrays;
+            aid = R.array.TUrkana_arrays;
         }
-        else if(city.equals("Goa"))
+        else if(city.equals("Eldoret"))
         {
-            aid = R.array.goa_arrays;
+            aid = R.array.ELdoret_arrays;
         }
-        else if(city.equals("Hyderabad"))
+        else if(city.equals("Siaya"))
         {
-            aid = R.array.hyderabad_arrays;
+            aid = R.array.Siaya_arrays;
         }
-        else if(city.equals("Indore"))
+        else if(city.equals("Meru"))
         {
-            aid = R.array.indore_arrays;
+            aid = R.array.Meru_arrays;
         }
-        else if(city.equals("Khargone"))
+        else if(city.equals("Kakamega"))
         {
-            aid = R.array.khargone_arrays;
+            aid = R.array.Kakamega_arrays;
         }
-        else if(city.equals("Khandwa"))
+        else if(city.equals("Kiambu"))
         {
-            aid = R.array.khandwa_arrays;
+            aid = R.array.Kiambu_arrays;
         }
-        else if(city.equals("Ujjain"))
+        else if(city.equals("Naivasha"))
         {
-            aid = R.array.ujjain_arrays;
+            aid = R.array.Naivasha_arrays;
         }
 
         Area_List = ArrayAdapter.createFromResource(this, aid , android.R.layout.select_dialog_item);
@@ -151,7 +155,7 @@ public abstract class DonateActivity extends AppCompatActivity implements Adapte
         {
             // Save data in db
 
-            dbHelper.insert(donerData, this);
+            msg.intern();
             msg = "Successfully, registered as Doner.";
             Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
             super.onBackPressed();

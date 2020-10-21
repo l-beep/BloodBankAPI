@@ -13,7 +13,7 @@ public class Result {
     private List<Field> fields = null;
     @SerializedName("resource_id")
     @Expose
-    private List<Field> resourceId = null;
+    private String resourceId = null;
     @SerializedName("limit")
     @Expose
     private Integer limit;
@@ -39,7 +39,7 @@ public class Result {
      * @param limit
      * @param fields
      */
-    public Result(List<Field> fields, List<Field> resourceId, Integer limit, Integer total, List<Field> records) {
+    public Result(List<Field> fields, String resourceId, Integer limit, Integer total, List<Field> records) {
         super();
         this.fields = fields;
         this.resourceId = resourceId;
@@ -56,11 +56,11 @@ public class Result {
         this.fields = fields;
     }
 
-    public List<Field> getResourceId() {
+    public String getResourceId() {
         return resourceId;
     }
 
-    public void setResourceId(List<Field> resourceId) {
+    public void setResourceId(String resourceId) {
         this.resourceId = resourceId;
     }
 

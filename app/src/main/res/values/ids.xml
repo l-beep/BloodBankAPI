@@ -15,4 +15,7 @@
     <item name="errorTextView" type="id" />
     <item name="spinner_bloodgrp" type="id" />
     <item name="spinner_city" type="id" />
+    <item name="spinner_area" type="id" />
+    <item name="ListHolder" type="id" />
+    <item name="location" type="id" />
 </resources>

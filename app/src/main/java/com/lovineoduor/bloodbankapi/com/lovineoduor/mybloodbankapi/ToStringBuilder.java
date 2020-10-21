@@ -4,7 +4,7 @@ public class ToStringBuilder {
     public ToStringBuilder(Result result) {
     }
 
-    public ToStringBuilder append(String help, String help1) {
+    public ToStringBuilder append(String help, Integer help1) {
         return null;
     }
 }

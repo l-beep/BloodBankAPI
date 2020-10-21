@@ -2,4 +2,17 @@
 <resources>
     <string-array name="bg_arrays" />
     <string-array name="city_arrays" />
+    <string-array name="Nairobi_arrays" />
+    <string-array name="Mombasa_arrays" />
+    <string-array name="Kisumu_arrays" />
+    <string-array name="Nakuru_arrays" />
+    <string-array name="Nanyuki_arrays" />
+    <string-array name="Kericho_arrays" />
+    <string-array name="TUrkana_arrays" />
+    <string-array name="ELdoret_arrays" />
+    <string-array name="Siaya_arrays" />
+    <string-array name="Meru_arrays" />
+    <string-array name="Kakamega_arrays" />
+    <string-array name="Kiambu_arrays" />
+    <string-array name="Naivasha_arrays" />
 </resources>

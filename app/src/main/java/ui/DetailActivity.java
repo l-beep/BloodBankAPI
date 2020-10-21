@@ -16,8 +16,7 @@ public class DetailActivity extends AppCompatActivity {
 
     DonerData data;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState, Object dbHelper) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
