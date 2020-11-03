@@ -55,7 +55,7 @@ public class Dashboard extends AppCompatActivity
         setContentView(R.layout.activity_dashboard);
 
         pd = new ProgressDialog(this);
-        pd.setMessage("Loading...");
+        pd.setMessage("Processing...");
         pd.setCancelable(true);
         pd.setCanceledOnTouchOutside(false);
 
@@ -135,16 +135,13 @@ public class Dashboard extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.dashboard, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         if (id == R.id.donateinfo) {

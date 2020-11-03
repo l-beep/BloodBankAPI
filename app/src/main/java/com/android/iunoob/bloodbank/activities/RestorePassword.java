@@ -32,7 +32,7 @@ public class RestorePassword extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         pd = new ProgressDialog(this);
-        pd.setMessage("Loading...");
+        pd.setMessage("Processing...");
         pd.setCancelable(true);
         pd.setCanceledOnTouchOutside(false);
 

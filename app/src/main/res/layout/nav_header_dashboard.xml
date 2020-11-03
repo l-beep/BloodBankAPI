@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingTop="@dimen/nav_header_vertical_spacing"
-            android:text="@string/nav_header_title"
+            android:text="Blood Bank"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@android:color/widget_edittext_dark"
             android:textStyle="bold" />
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:text="@string/nav_header_subtitle"
+            android:text="oduor.lovine@gmail.com"
             android:textColor="@android:color/widget_edittext_dark" />
 
     </LinearLayout>

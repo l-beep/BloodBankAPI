@@ -45,7 +45,7 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         pd = new ProgressDialog(this);
-        pd.setMessage("Loading...");
+        pd.setMessage("Processing...");
         pd.setCancelable(true);
         pd.setCanceledOnTouchOutside(false);
         pd.show();
@@ -114,7 +114,7 @@ public class ProfileActivity extends AppCompatActivity {
                                 }
                                 else
                                 {
-                                    Toast.makeText(ProfileActivity.this, "Your are not a donor! Be a donor and save life by donating blood.",
+                                    Toast.makeText(ProfileActivity.this, "Your are not a donor yet! Be a donor and save life by donating blood.",
                                             Toast.LENGTH_LONG).show();
                                 }
                                 pd.dismiss();
@@ -185,7 +185,7 @@ public class ProfileActivity extends AppCompatActivity {
                                             public void onComplete(@NonNull Task<AuthResult> task) {
 
                                                 if (!task.isSuccessful()) {
-                                                    Toast.makeText(ProfileActivity.this, "Registration failed! try agian.", Toast.LENGTH_LONG)
+                                                    Toast.makeText(ProfileActivity.this, " try again.", Toast.LENGTH_LONG)
                                                             .show();
                                                     Log.v("error", task.getException().getMessage());
                                                 } else {

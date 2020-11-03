@@ -48,24 +48,24 @@
                     android:layout_height="wrap_content" />
                 <TextView
                     android:id="@+id/targetCN"
-                    android:text="+8801234567890"
+                    android:text="+2547 191 272 17"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </LinearLayout>
             <TextView
                 android:id="@+id/reqstUser"
-                android:text="Requested by: Alamin Hossain"
+                android:text="Requested by: Jane Doe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/posted"
-                android:text="Posted: 11:30 PM, 17/10/2018"
+                android:text="Posted: 11:30 PM, 23/09/2020"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/reqstLocation"
-                android:text="From: Kushtia, Khulna"
+                android:text="From: Nairobi , Kenya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>

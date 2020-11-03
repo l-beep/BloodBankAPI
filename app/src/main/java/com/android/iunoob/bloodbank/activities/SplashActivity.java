@@ -20,8 +20,6 @@ public class SplashActivity extends AppCompatActivity {
 
         imageView = findViewById(R.id.load_image);
 
-        AnimationDrawable animationDrawable = (AnimationDrawable) imageView.getDrawable();
-        animationDrawable.start();
 
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {

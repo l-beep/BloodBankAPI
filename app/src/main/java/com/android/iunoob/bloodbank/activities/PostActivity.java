@@ -48,7 +48,7 @@ public class PostActivity extends AppCompatActivity {
         setContentView(R.layout.activity_post);
 
         pd = new ProgressDialog(this);
-        pd.setMessage("Loading...");
+        pd.setMessage("Processing...");
         pd.setCancelable(true);
         pd.setCanceledOnTouchOutside(false);
 

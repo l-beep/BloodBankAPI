@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         pd = new ProgressDialog(this);
-        pd.setMessage("Loading...");
+        pd.setMessage("Processing...");
         pd.setCancelable(true);
         pd.setCanceledOnTouchOutside(false);
 
@@ -81,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
                     else
                     {
-                        Toast.makeText(getApplicationContext(), "Please fill all the field.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Please fill all the required field.", Toast.LENGTH_LONG).show();
                     }
 
                 } catch (Exception e)
