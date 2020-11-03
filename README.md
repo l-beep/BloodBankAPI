@@ -17,6 +17,44 @@ Included:
 - Google Maps Api
 - Android Studio IDE
 
+<<<<<<< HEAD
+||||||| merged common ancestors
+### Preview:
+<img src="https://raw.githubusercontent.com/imShakil/BloodBank/master/spalsh.png" alt="Splash Screen" width="100" height="200" /> <img src="https://raw.githubusercontent.com/imShakil/BloodBank/master/bloodbank2.png" alt="Splash Screen" width="100" height="200" /> <img src="https://raw.githubusercontent.com/imShakil/BloodBank/master/bloodbank6.png" alt="Splash Screen" width="100" height="200" /> <img src="https://raw.githubusercontent.com/imShakil/BloodBank/master/bloodbank3.png" alt="Splash Screen" width="100" height="200" /> <img src="https://raw.githubusercontent.com/imShakil/BloodBank/master/bloodbank4.png" alt="Splash Screen" width="100" height="200" /> <img src="https://raw.githubusercontent.com/imShakil/BloodBank/master/bloodbank1.png" alt="Splash Screen" width="100" height="200" /> <img src="https://raw.githubusercontent.com/imShakil/BloodBank/master/bloodbank5.png" alt="Splash Screen" width="100" height="200" /> 
+
+
+
+![](https://img.shields.io/github/stars/imshakil/BloodBank.svg)
+![](https://img.shields.io/github/forks/imshakil/BloodBank.svg)
+[![HitCount](http://hits.dwyl.io/imshakil/BloodBank.svg)](http://hits.dwyl.io/imshakil/BloodBank)
+![](https://img.shields.io/github/tag/imshakil/BloodBank.svg) 
+![](https://img.shields.io/github/v/release/imshakil/BloodBank.svg) 
+![](https://img.shields.io/github/issues/imshakil/BloodBank.svg) 
+
+
+### Database Snapshot
+Follow this link: https://github.com/imShakil/BloodBank/wiki/Databse-Snapshots
+(This project can be used for any educational purpose and can be changed or modified in need.<br><b> A star will be appriciated if you think it might be helpful.</b>)<br>
+
+@imShakil<br>
+E-Mail: mh.ice.iu@gmail.com
+=======
+## BLOODBANK
+```
+An android application that consumes Bloodbank API to display donors,blood requests ,and number of donors and blood requests .Users can also create their donors  list and navigate to Bloodbank.
+
+
+```
+=======
+oduor.lovine@gmail.com
+=======
+## BLOODBANK
+```
+An android application that consumes Bloodbank API to display donors,blood requests ,and number of donors and blood requests .Users can also create their donors  list and navigate to Bloodbank.
+
+
+```
+>>>>>>> b89ed8c8f7cde30a41f164b72dbc099191b0dac5
 ## AUTHOR
 
 ```LOVINE ODUOR
@@ -35,13 +73,6 @@ Bloodbank API
 Google Maps API
 ```
 
-## LIBRARIES
-```
-Picasso - For image loading
-
-XmlPullParser - XML parsing
-
-Volley - Network Library
 ```
 
 ## SETUP
@@ -53,11 +84,6 @@ Import it to Android Studio
 Set up  Emulator or physical device
 ``
 
-
-## BUGS
-```
-Had a hard time to implement retrofit
-```
 
 ## CONTACTS
 ```
