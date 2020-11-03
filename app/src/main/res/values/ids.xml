@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="appNameTextView" type="id" />
+    <item name="saveddonate" type="id" />
+    <item name="donation" type="id" />
+    <item name="saveddonors" type="id" />
+    <item name="locationEditText" type="id" />
+    <item name="donationTextView" type="id" />
+    <item name="listView" type="id" />
+    <item name="requestView" type="id" />
+    <item name="progressBar" type="id" />
+    <item name="donationblood" type="id" />
+    <item name="requestblood" type="id" />
+    <item name="request" type="id" />
+    <item name="errorTextView" type="id" />
+    <item name="spinner_bloodgrp" type="id" />
+    <item name="spinner_city" type="id" />
+    <item name="spinner_area" type="id" />
+    <item name="ListHolder" type="id" />
+    <item name="location" type="id" />
+</resources>

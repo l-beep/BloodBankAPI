@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.android.iunoob.bloodbank">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -37,13 +38,33 @@
         <activity
             android:name=".activities.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
+=======
+    package="com.lovineoduor.bloodbankapi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BloodBankAPI">
+        <activity android:name="ui.MainActivity">
+>>>>>>> de2906fa06604b17f40e5ef18aff7d903e89f76d
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".activities.PostActivity" />
     </application>
 
 </manifest>
+=======
+    </application>
+
+</manifest>
+>>>>>>> de2906fa06604b17f40e5ef18aff7d903e89f76d
